@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
+venv/
+.venv/
+
+# Environment Variables
+.env
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# Model files
+saved_bert_model/
+
+# Database
+chroma_db/
+
+# Results
+results/
+
+# OS
+.DS_Store
+Thumbs.db
