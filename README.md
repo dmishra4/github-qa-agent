@@ -1,5 +1,7 @@
 # GitHub QA Agent
 
+FastAPI + Gemini powered GitHub commit analysis tool.
+
 AI-powered GitHub commit analyzer that automatically reviews the latest code changes in a repository and generates QA-focused test recommendations.
 
 ## Features
@@ -16,29 +18,35 @@ AI-powered GitHub commit analyzer that automatically reviews the latest code cha
   * Recommended test areas
   * Recommended test types
 
-## Technology Stack
+## Live Demo
 
-* FastAPI
-* Google Gemini 2.5 Flash
-* GitHub REST API
-* Python
+https://github-qa-agent-production.up.railway.app/docs
+
+## Tech Stack
+
+- Python 3.12
+- FastAPI
+- Google Gemini 2.5 Flash
+- GitHub REST API
+- Railway
+
+## Run Locally
+
+pip install -r requirements.txt
+
+uvicorn app.main:app --reload
 
 ## Project Structure
 
 github-qa-agent/
-
+│
 ├── app/
-
-│   ├── **init**.py
-
+│   ├── __init__.py
 │   ├── main.py
-
 │   └── agent.py
-
+│
 ├── .gitignore
-
 ├── requirements.txt
-
 └── README.md
 
 ## Installation
