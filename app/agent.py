@@ -27,7 +27,11 @@ def analyze_repo(owner, repo):
 
     url = f"https://api.github.com/repos/{owner}/{repo}/commits"
 
-    response = requests.get(url, timeout=20)
+    response = requests.get(
+        details_url,
+        headers=github_headers(),
+        timeout=20
+    )
     response.raise_for_status()
 
     commits = response.json()
